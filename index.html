@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Jackson Barnes | Video Game Composer</title>
+
+  <meta
+    name="description"
+    content="Jackson Barnes, also known as 97 Jarks, is a composer creating original music for video games."
+  >
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: #0d0d0f;
+      color: #f4f4f4;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: min(900px, calc(100% - 40px));
+      margin: auto;
+    }
+
+    header {
+      padding: 110px 0 85px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(48px, 8vw, 82px);
+      line-height: 0.95;
+      letter-spacing: -3px;
+    }
+
+    .artist-name {
+      margin-top: 18px;
+      font-size: 18px;
+      color: #a8a8ae;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .subtitle {
+      margin-top: 28px;
+      font-size: clamp(20px, 3vw, 28px);
+      font-weight: bold;
+    }
+
+    .intro {
+      margin-top: 20px;
+      max-width: 680px;
+      color: #bcbcc2;
+      font-size: 18px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 32px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 20px;
+      border-radius: 8px;
+      background: #ffffff;
+      color: #111111;
+      text-decoration: none;
+      font-weight: bold;
+      transition: transform 0.15s ease, opacity 0.15s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      opacity: 0.9;
+    }
+
+    .button.secondary {
+      background: #1c1c21;
+      color: #ffffff;
+      border: 1px solid #33333a;
+    }
+
+    section {
+      margin-bottom: 100px;
+    }
+
+    .section-label {
+      color: #77777f;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      margin: 0 0 35px;
+      font-size: clamp(32px, 5vw, 46px);
+      letter-spacing: -1.5px;
+    }
+
+    .category {
+      margin-bottom: 65px;
+    }
+
+    h3 {
+      margin: 0 0 20px;
+      font-size: 25px;
+    }
+
+    .track {
+      background: #151519;
+      border: 1px solid #24242a;
+      border-radius: 12px;
+      padding: 18px;
+      margin-bottom: 14px;
+    }
+
+    .track-name {
+      font-weight: bold;
+      margin-bottom: 11px;
+      font-size: 16px;
+    }
+
+    iframe {
+      width: 100%;
+      display: block;
+    }
+
+    .link-track {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .listen-link {
+      white-space: nowrap;
+      color: #ffffff;
+      text-decoration: none;
+      background: #28282f;
+      padding: 8px 13px;
+      border-radius: 7px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .listen-link:hover {
+      background: #34343c;
+    }
+
+    .about {
+      background: #151519;
+      border: 1px solid #24242a;
+      padding: 30px;
+      border-radius: 14px;
+    }
+
+    .about p {
+      margin: 0 0 18px;
+      color: #c3c3c8;
+      font-size: 18px;
+    }
+
+    .about p:last-child {
+      margin-bottom: 0;
+    }
+
+    .cta {
+      text-align: center;
+      padding: 55px 30px;
+      background: #151519;
+      border: 1px solid #24242a;
+      border-radius: 14px;
+    }
+
+    .cta h2 {
+      margin-bottom: 15px;
+    }
+
+    .cta p {
+      color: #aaaab1;
+      max-width: 550px;
+      margin: 0 auto 25px;
+      font-size: 17px;
+    }
+
+    .cta .buttons {
+      justify-content: center;
+      margin-top: 25px;
+    }
+
+    footer {
+      border-top: 1px solid #222228;
+      padding: 35px 0;
+      color: #77777f;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 75px 0 60px;
+      }
+
+      .link-track {
+        display: block;
+      }
+
+      .listen-link {
+        display: inline-block;
+        margin-top: 12px;
+      }
+
+      .track {
+        padding: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+
+    <div class="container">
+
+      <h1>Jackson Barnes</h1>
+
+      <div class="artist-name">
+        97 Jarks
+      </div>
+
+      <div class="subtitle">
+        Composer for Video Games
+      </div>
+
+      <p class="intro">
+        I write music for games ranging from energetic battle tracks
+        and orchestral pieces to upbeat, strange, and atmospheric music.
+        I'm interested in creating soundtracks that give games their own
+        musical identity.
+      </p>
+
+      <div class="buttons">
+
+        <a
+          class="button"
+          href="#music"
+        >
+          Listen to My Work
+        </a>
+
+        <a
+          class="button secondary"
+          href="https://97jarks.bandcamp.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Bandcamp
+        </a>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <main class="container">
+
+
+    <!-- MUSIC -->
+
+    <section id="music">
+
+      <div class="section-label">
+        Portfolio
+      </div>
+
+      <h2>Selected Music</h2>
+
+
+      <!-- HAPPY SONGS -->
+
+      <div class="category">
+
+        <h3>Happy Songs</h3>
+
+
+        <div class="track">
+
+          <div class="track-name">
+            Let's Dance!!1
+          </div>
+
+          <iframe
+            style="border: 0; width: 100%; height: 42px;"
+            src="https://bandcamp.com/EmbeddedPlayer/track=2947845019/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/"
+            seamless>
+            <a href="https://97jarks.bandcamp.com/track/lets-dance-1">
+              Lets dance!!1 by JackBarnes (97jarks)
+            </a>
+          </iframe>
+
+        </div>
+
+
+        <div class="track link-track">
+
+          <div class="track-name">
+            Good Songs
+          </div>
+
+          <a
+            class="listen-link"
+            href="https://97jarks.bandcamp.com/album/good-songs"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Listen on Bandcamp →
+          </a>
+
+        </div>
+
+
+        <div class="track link-track">
+
+          <div class="track-name">
+            Silly Battle Music
+          </div>
+
+          <a
+            class="listen-link"
+            href="https://97jarks.bandcamp.com/track/silly-battle-music"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Listen on Bandcamp →
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- ORCHESTRAL MUSIC -->
+
+      <div class="category">
+
+        <h3>Orchestral Music</h3>
+
+
+        <div class="track">
+
+          <div class="track-name">
+            Catharsis With the Fellas
+          </div>
+
+          <iframe
+            style="border: 0; width: 100%; height: 42px;"
+            src="https://bandcamp.com/EmbeddedPlayer/track=811278065/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/"
+            seamless>
+            <a href="https://97jarks.bandcamp.com/track/catharsis-with-the-fellas">
+              Catharsis with the fellas by JackBarnes (97jarks)
+            </a>
+          </iframe>
+
+        </div>
+
+
+        <div class="track link-track">
+
+          <div class="track-name">
+            Beer Ball Pizza Boys Night
+          </div>
+
+          <a
+            class="listen-link"
+            href="https://97jarks.bandcamp.com/track/beer-ball-pizza-boys-night"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Listen on Bandcamp →
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- INTENSE MUSIC -->
+
+      <div class="category">
+
+        <h3>Intense Music</h3>
+
+
+        <div class="track">
+
+          <div class="track-name">
+            3D Parkour
+          </div>
+
+          <iframe
+            style="border: 0; width: 100%; height: 42px;"
+            src="https://bandcamp.com/EmbeddedPlayer/track=2947143188/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/"
+            seamless>
+            <a href="https://97jarks.bandcamp.com/track/3d-parkour">
+              3D Parkour by JackBarnes (97jarks)
+            </a>
+          </iframe>
+
+        </div>
+
+
+        <div class="track">
+
+          <div class="track-name">
+            Corosica — GMTK Game Jam 2026
+          </div>
+
+          <iframe
+            style="border: 0; width: 100%; height: 42px;"
+            src="https://bandcamp.com/EmbeddedPlayer/album=1762706665/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/"
+            seamless>
+            <a href="https://97jarks.bandcamp.com/album/corosica-gmtk-game-jam-2026">
+              Corosica (GMTK Game Jam 2026) by JackBarnes (97jarks)
+            </a>
+          </iframe>
+
+        </div>
+
+
+        <div class="track">
+
+          <div class="track-name">
+            Slow Cool Walking Powerfully and Cool Style
+          </div>
+
+          <iframe
+            style="border: 0; width: 100%; height: 42px;"
+            src="https://bandcamp.com/EmbeddedPlayer/track=2099292874/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/"
+            seamless>
+            <a href="https://97jarks.bandcamp.com/track/slow-cool-walking-powerfully-and-cool-style">
+              Slow cool walking powerfully and cool style by JackBarnes (97jarks)
+            </a>
+          </iframe>
+
+        </div>
+
+      </div>
+
+
+      <!-- MORE MUSIC -->
+
+      <div class="cta">
+
+        <h2>Want to hear more?</h2>
+
+        <p>
+          Check out the rest of my songs on Bandcamp.
+          I'm uploading more music all the time!
+        </p>
+
+        <a
+          class="button"
+          href="https://97jarks.bandcamp.com/music"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Check Out the Rest of My Music →
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section>
+
+      <div class="section-label">
+        About
+      </div>
+
+      <h2>About Me</h2>
+
+      <div class="about">
+
+        <p>
+          I'm Jackson Barnes, a 21-year-old musician and composer
+          currently studying cybersecurity at Appalachian State University.
+        </p>
+
+        <p>
+          I've been a musician for around 10 years, and video games
+          have always been one of my biggest passions. Combining those
+          two things and building a career composing music for games
+          is what I'm working toward.
+        </p>
+
+        <p>
+          I love experimenting with different styles rather than
+          locking myself into one sound. Whether a game needs something
+          orchestral, energetic, emotional, weird, happy, or completely
+          chaotic, I'm interested in finding the musical identity that
+          fits the project.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section>
+
+      <div class="section-label">
+        Contact
+      </div>
+
+      <h2>Let's Make Something</h2>
+
+      <div class="cta">
+
+        <p>
+          I'm always interested in meeting developers and hearing about
+          new games. If you think my music could fit your project,
+          feel free to reach out.
+        </p>
+
+        <div class="buttons">
+
+          <a
+            class="button"
+            href="mailto:Jackbarnes706@gmail.com"
+          >
+            Email Me
+          </a>
+
+          <a
+            class="button secondary"
+            href="https://97jarks.bandcamp.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Bandcamp
+          </a>
+
+        </div>
+
+        <p style="margin-top: 25px; margin-bottom: 0;">
+          Jackbarnes706@gmail.com
+        </p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="container">
+      © 2026 97 Jarks
+    </div>
+
+  </footer>
+
+</body>
+
+</html>
